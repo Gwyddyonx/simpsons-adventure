@@ -1,0 +1,66 @@
+@font-face {
+    font-family: simpsonfont;
+    src: url(/assets/Simpsonfont.ttf);
+  }
+  
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./assets/clouds.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.game-container {
+    background: #373737;
+    position: relative;
+    width: 352px;
+    height: 198px;
+    margin: 0 auto;
+    margin-top: 20px;
+    outline: 1px solid #fff;
+    transform: scale(2.5) translateY(30%);
+}
+
+.game-container canvas {
+    image-rendering: pixelated;
+}
+
+.arrow-container {
+    margin: 20px;
+    position: relative;
+    background-color: #545780;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.arrow {
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+
+.title {
+    text-align: center;
+    margin: 50px;
+    font-size: 100px;
+    color: rgb(240, 204, 0);
+    font-family: simpsonfont;
+    line-height: 1;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+             1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+.title span{
+    color: rgb(194, 1, 1);
+}
+.homer-img{
+    top: 20%;
+    left: 10%;
+    position: absolute;
+}
